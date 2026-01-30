@@ -55,16 +55,16 @@ export default function ResearchPage() {
         </div>
       </section>
 
-      <section className="section-container bg-offWhite">
+      <section className="section-container bg-primary-dark">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {researchAreas.map((area, index) => (
               <div key={index} className="card hover:border-primary-light border-2 border-transparent transition-all group">
                 <div className="w-16 h-16 bg-primary-light/20 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary-light/30 transition-colors">
-                  <area.icon className="w-8 h-8 text-primary-dark" />
+                  <area.icon className="w-8 h-8 text-primary-light" />
                 </div>
-                <h3 className="text-xl font-bold text-primary-dark mb-3">{area.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{area.description}</p>
+                <h3 className="text-xl font-bold text-offWhite mb-3">{area.title}</h3>
+                <p className="text-gray-300 leading-relaxed">{area.description}</p>
               </div>
             ))}
           </div>

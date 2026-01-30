@@ -12,6 +12,8 @@ const config: Config = {
         primary: {
           dark: "#1b4332",
           light: "#a2c95e",
+          darker: "#0f281f", // أخضر أغمق للتنويع
+          medium: "#2d5a47", // أخضر متوسط
         },
         offWhite: "#fffdfe",
       },

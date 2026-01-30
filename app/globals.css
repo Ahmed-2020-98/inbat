@@ -4,11 +4,11 @@
 
 @layer base {
   body {
-    @apply bg-offWhite text-primary-dark;
+    @apply bg-primary-dark text-offWhite;
   }
   
   * {
-    @apply border-primary-dark/20;
+    @apply border-primary-medium/30;
   }
 }
 
@@ -18,7 +18,7 @@
   }
   
   .btn-secondary {
-    @apply bg-primary-dark text-offWhite font-bold py-3 px-6 rounded-lg hover:bg-primary-dark/90 transition-colors duration-200;
+    @apply bg-primary-dark text-offWhite font-bold py-3 px-6 rounded-lg hover:bg-primary-medium transition-colors duration-200;
   }
   
   .section-container {
@@ -26,10 +26,10 @@
   }
   
   .section-title {
-    @apply text-3xl md:text-4xl font-bold text-primary-dark mb-6 text-center;
+    @apply text-3xl md:text-4xl font-bold text-offWhite mb-6 text-center;
   }
   
   .card {
-    @apply bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300;
+    @apply bg-primary-darker rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border border-primary-medium/50;
   }
 }

@@ -29,7 +29,7 @@ const values = [
 
 export default function Values() {
   return (
-    <section className="section-container bg-offWhite">
+    <section className="section-container bg-primary-darker">
       <div className="container mx-auto px-4">
         <h2 className="section-title">قيمنا</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -37,10 +37,10 @@ export default function Values() {
             <div key={index} className="card text-center group hover:scale-105 transition-transform">
               <div className="text-6xl mb-4">{value.emoji}</div>
               <div className="w-16 h-16 bg-primary-light/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary-light/30 transition-colors">
-                <value.icon className="w-8 h-8 text-primary-dark" />
+                <value.icon className="w-8 h-8 text-primary-light" />
               </div>
-              <h3 className="text-2xl font-bold text-primary-dark mb-3">{value.title}</h3>
-              <p className="text-gray-600 leading-relaxed">{value.description}</p>
+              <h3 className="text-2xl font-bold text-offWhite mb-3">{value.title}</h3>
+              <p className="text-gray-300 leading-relaxed">{value.description}</p>
             </div>
           ))}
         </div>

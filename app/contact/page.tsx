@@ -43,21 +43,21 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Section */}
-      <section className="section-container bg-offWhite">
+      <section className="section-container bg-primary-dark">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12">
             {/* Contact Info */}
             <div>
-              <h2 className="text-3xl font-bold text-primary-dark mb-8">معلومات التواصل</h2>
+              <h2 className="text-3xl font-bold text-offWhite mb-8">معلومات التواصل</h2>
               
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-primary-light/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-primary-dark" />
+                    <Phone className="w-6 h-6 text-primary-light" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-primary-dark mb-1">الهاتف</h3>
-                    <a href="tel:+966533603976" className="text-gray-700 hover:text-primary-light transition-colors text-lg">
+                    <h3 className="text-xl font-bold text-offWhite mb-1">الهاتف</h3>
+                    <a href="tel:+966533603976" className="text-gray-300 hover:text-primary-light transition-colors text-lg">
                       +966 53 360 3976
                     </a>
                   </div>
@@ -65,11 +65,11 @@ export default function ContactPage() {
 
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-primary-light/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-6 h-6 text-primary-dark" />
+                    <Mail className="w-6 h-6 text-primary-light" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-primary-dark mb-1">البريد الإلكتروني</h3>
-                    <a href="mailto:info@inbat.sa" className="text-gray-700 hover:text-primary-light transition-colors text-lg">
+                    <h3 className="text-xl font-bold text-offWhite mb-1">البريد الإلكتروني</h3>
+                    <a href="mailto:info@inbat.sa" className="text-gray-300 hover:text-primary-light transition-colors text-lg">
                       info@inbat.sa
                     </a>
                   </div>
@@ -77,18 +77,18 @@ export default function ContactPage() {
 
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-primary-light/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-primary-dark" />
+                    <MapPin className="w-6 h-6 text-primary-light" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-primary-dark mb-1">العنوان</h3>
-                    <p className="text-gray-700 text-lg">مقر الشركة</p>
+                    <h3 className="text-xl font-bold text-offWhite mb-1">العنوان</h3>
+                    <p className="text-gray-300 text-lg">مقر الشركة</p>
                   </div>
                 </div>
               </div>
 
               {/* Social Links */}
               <div className="mt-10">
-                <h3 className="text-xl font-bold text-primary-dark mb-4">تابعنا على</h3>
+                <h3 className="text-xl font-bold text-offWhite mb-4">تابعنا على</h3>
                 <div className="flex gap-4">
                   <a href="#" aria-label="LinkedIn" className="w-12 h-12 bg-primary-dark text-offWhite rounded-lg flex items-center justify-center hover:bg-primary-dark/90 transition-colors">
                     <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -111,10 +111,10 @@ export default function ContactPage() {
 
             {/* Contact Form */}
             <div>
-              <h2 className="text-3xl font-bold text-primary-dark mb-8">أرسل لنا رسالة</h2>
+              <h2 className="text-3xl font-bold text-offWhite mb-8">أرسل لنا رسالة</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-lg font-medium text-primary-dark mb-2">
+                  <label htmlFor="name" className="block text-lg font-medium text-offWhite mb-2">
                     الاسم
                   </label>
                   <input
@@ -124,13 +124,13 @@ export default function ContactPage() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-primary-light focus:outline-none transition-colors text-lg"
+                    className="w-full px-4 py-3 bg-primary-darker border-2 border-primary-medium/50 rounded-lg focus:border-primary-light focus:outline-none transition-colors text-lg text-offWhite placeholder-gray-400"
                     placeholder="اسمك الكامل"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-lg font-medium text-primary-dark mb-2">
+                  <label htmlFor="email" className="block text-lg font-medium text-offWhite mb-2">
                     البريد الإلكتروني
                   </label>
                   <input
@@ -140,13 +140,13 @@ export default function ContactPage() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-primary-light focus:outline-none transition-colors text-lg"
+                    className="w-full px-4 py-3 bg-primary-darker border-2 border-primary-medium/50 rounded-lg focus:border-primary-light focus:outline-none transition-colors text-lg text-offWhite placeholder-gray-400"
                     placeholder="example@email.com"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-lg font-medium text-primary-dark mb-2">
+                  <label htmlFor="message" className="block text-lg font-medium text-offWhite mb-2">
                     الرسالة
                   </label>
                   <textarea
@@ -156,7 +156,7 @@ export default function ContactPage() {
                     onChange={handleChange}
                     required
                     rows={6}
-                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-primary-light focus:outline-none transition-colors text-lg resize-none"
+                    className="w-full px-4 py-3 bg-gray-800 border-2 border-gray-700 rounded-lg focus:border-primary-light focus:outline-none transition-colors text-lg resize-none text-offWhite placeholder-gray-500"
                     placeholder="اكتب رسالتك هنا..."
                   />
                 </div>

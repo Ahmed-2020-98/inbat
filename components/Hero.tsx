@@ -38,7 +38,7 @@ export default function Hero() {
       </div>
 
       {/* Decorative Elements */}
-      <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-offWhite to-transparent"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-primary-dark to-transparent"></div>
     </section>
   );
 }

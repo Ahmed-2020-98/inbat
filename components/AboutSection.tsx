@@ -4,13 +4,13 @@ import Image from "next/image";
 
 export default function AboutSection() {
   return (
-    <section className="section-container bg-offWhite">
+    <section className="section-container bg-primary-dark">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div>
             <h2 className="section-title text-right">قصة إنبات</h2>
-            <div className="space-y-4 text-lg leading-relaxed text-gray-700">
+            <div className="space-y-4 text-lg leading-relaxed text-gray-300">
               <p>
                 إنبات القابضة هي مجموعة شركات رائدة في القطاع الزراعي، متخصصة في تقديم حلول زراعية متكاملة وذكية تعتمد على أحدث التقنيات والابتكارات العلمية.
               </p>
