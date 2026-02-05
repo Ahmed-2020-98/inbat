@@ -33,7 +33,7 @@ export default function Companies() {
         </p>
         <div className="grid md:grid-cols-2 gap-8">
           {companies.map((company, index) => (
-            <div key={index} className="card hover:border-primary-light border-2 border-transparent transition-all group">
+            <div key={index} className="card  border-2 border-transparent transition-all group bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all group border border-white/20">
               <div className="flex items-start gap-4">
                 <div className="w-14 h-14 bg-primary-light/20 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary-light/30 transition-colors">
                   <company.icon className="w-7 h-7 text-primary-light" />

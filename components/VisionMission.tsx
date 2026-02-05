@@ -25,18 +25,18 @@ export default function VisionMission() {
   ];
 
   return (
-    <section className="section-container bg-primary-darker">
-      <div className="container mx-auto px-4">
+    <section className="section-container">
+      <div className="container mx-auto px-4 ">
         {/* Vision */}
         <div className="max-w-4xl mx-auto mb-16">
-          <div className="card bg-gradient-to-br from-primary-dark to-primary-dark/90 text-offWhite p-8 md:p-12 border-primary-dark">
+          <div className="card bg-gradient-to-br  text-offWhite p-8 md:p-12 border-primary bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all group border border-white/20">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">رؤيتنا</h2>
             <p className="text-lg md:text-xl leading-relaxed text-center">
               أن نكون الرائدين في تحويل القطاع الزراعي السعودي نحو الاستدامة والذكاء، وأن نساهم بشكل فاعل في تحقيق أهداف رؤية السعودية 2030 في الأمن الغذائي والاستدامة البيئية، وأن نكون الشريك المفضل للحكومات والمستثمرين والشركات في تطوير مشاريع زراعية ناجحة ومستدامة.
             </p>
           </div>
         </div>
-
+{/* bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all group border border-white/20 */}
         {/* Mission */}
         <div className="mb-8">
           <h2 className="section-title">رسالتنا</h2>
@@ -46,9 +46,9 @@ export default function VisionMission() {
         </div>
 
         {/* Mission Points */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 ">
           {missionPoints.map((point, index) => (
-            <div key={index} className="card text-center group hover:border-primary-light border-2 border-transparent transition-all">
+            <div key={index} className="card text-center group hover:border-primary-light border-2 border-transparent transition-all bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all group border border-white/20">
               <div className="w-16 h-16 bg-primary-light/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary-light/30 transition-colors">
                 <point.icon className="w-8 h-8 text-primary-light" />
               </div>

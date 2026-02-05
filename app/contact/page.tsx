@@ -57,8 +57,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-offWhite mb-1">الهاتف</h3>
-                    <a href="tel:+966533603976" className="text-gray-300 hover:text-primary-light transition-colors text-lg">
-                      +966 53 360 3976
+                    <a href="tel:+966530000000" className="text-gray-300 hover:text-primary-light transition-colors text-lg">
+                      966530000000+
                     </a>
                   </div>
                 </div>

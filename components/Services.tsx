@@ -46,9 +46,9 @@ export default function Services() {
         <p className="text-center text-lg text-gray-300 mb-12 max-w-3xl mx-auto">
           حلول زراعية متكاملة تغطي جميع احتياجات القطاع الزراعي
         </p>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {services.map((service, index) => (
-            <div key={index} className="card text-center hover:border-primary-light border-2 border-transparent transition-all group">
+            <div key={index} className="card text-center hover:border-primary-light border-2 border-transparent transition-all group bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all group border border-white/20">
               <div className="w-16 h-16 bg-primary-light/20 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary-light/30 transition-colors">
                 <service.icon className="w-8 h-8 text-primary-light" />
               </div>
